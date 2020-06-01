@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
-/WebCoding2
+WebCoding2
+WebCoding
 
 # local env files
 .env.local

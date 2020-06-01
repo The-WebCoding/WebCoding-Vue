@@ -1,0 +1,15 @@
+///////HTML///////////////////
+< input type="file" id="ex_fileToUpload" onchange="filecheck(this)">  
+< div id='AsciiSet' class="section clearfix" >< /div>
+///////JS///////////////////
+function filecheck(FileURL){
+    JsciiCovert(FileURL,'AsciiSet');
+}
+
+
+
+
+                                < 說明 >
+----只要直接輸入file及位置就會直接顯示----
+          
+            JsciiCovert  (    file   ,   div    )  ;

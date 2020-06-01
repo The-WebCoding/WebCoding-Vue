@@ -1,23 +1,44 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Pic from "@/views/Pic.vue";
+import Ascii from "@/views/Ascii.vue";
+import QRCode from "@/views/QRCode.vue";
+import Expert from "@/views/Expert.vue";
+import Live2D from "@/views/Live2D.vue";
+import Gmail from "@/views/Gmail.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "Pic",
+    component: Pic
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    path: "/Ascii",
+    name: "Ascii",
+    component: Ascii
+  },
+  {
+    path: "/QRCode",
+    name: "QRCode",
+    component: QRCode
+  },
+  {
+    path: "/Expert",
+    name: "Expert",
+    component: Expert
+  },
+  {
+    path: "/Live2D",
+    name: "Live2D",
+    component: Live2D
+  },
+  {
+    path: "/Gmail",
+    name: "Gmail",
+    component: Gmail
   }
 ];
 
